@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic Survival</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Titanic Survival Prediction</h1>
+    <div>
+        <form action="/titanic" method="POST">
+            <label for="">Passenger Id</label>
+            <input type="text" value="2" id="pid" name="pid">
+            <br><br>
+
+            <label for="">Passenger Class</label>
+            <input type="text" value="3" id="pclass" name="pclass">
+            <br><br>
+
+            <label for="">Name</label>
+            <input type="text" value="Cumings, Mrs. John Bradley" id="name" name="name">
+            <br><br>
+
+            <label for="sex">Sex</label>
+            <!-- <input type="text" value="female" id="sex" name="sex"> -->
+            <select name="sex" id="sex">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select>
+            <br><br>
+
+            <label for="">Age</label>
+            <input type="text" value="38" id="age" name="age">
+            <br><br>
+
+            <label for="">Siblings Boarded</label>
+            <input type="text" value="1" id="sib" name="sib">
+            <br><br>
+
+            <label for="">Parents Boarded</label>
+            <input type="text" value="0" id="par" name="par">
+            <br><br>
+
+            <label for="">Ticket No </label>
+            <input type="text" value="PC 17599" id="tict" name="tict">
+            <br><br>
+
+            <label for="">Fare</label>
+            <input type="text" value="71.2833" id="fare" name="fare">
+            <br><br>
+
+            <label for="">Cabin No</label>
+            <input type="text" value="C85" id="cabin" name="cabin">
+            <br><br>
+
+            <label for="">Embarked No</label>
+            <input type="text" value="C" id="emb" name="emb">
+            <br><br>
+
+            <input type="submit" value="submit">
+
+            <br><br>
+            <label for="">Output</label>
+            <input type="text" value="{{output}}" id="ans">
+
+        </form>
+    </div>
+</body>
+
+</html>

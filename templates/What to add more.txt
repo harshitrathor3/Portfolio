@@ -1,0 +1,4 @@
+add much good CSS
+improve UI
+add description in ML Projects like 
+	titanic survival prediction uses which model (model name, accuracy, etc...)

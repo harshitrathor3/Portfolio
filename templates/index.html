@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="static\css\style.css">
+    <link rel="stylesheet" href="static\css\typing effect.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="static\js\ml_models.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html">
+                <h1>Harshit Rathore</h1>
+            </a>
+        </div>
+        <div class="navs">
+            <a href="#main">Home</a>
+            &nbsp;&nbsp;
+            <a href="#projects">Projects</a>
+            &nbsp;&nbsp;
+            <a href="#testimonials">Testimonials</a>
+            &nbsp;&nbsp;
+            <a href="#skills">Skills</a>
+            &nbsp;&nbsp;
+            <a href="#resume">Resume</a>
+            &nbsp;&nbsp;
+            <a href="#coding">Coding Profiles</a>
+            &nbsp;&nbsp;
+            <a href="#mailme">Mail me</a>
+            &nbsp;&nbsp;
+            <a href="#contact">Contact Me</a>
+        </div>
+        
+    </nav>
+    
+
+    
+    <div class="main" id="main">
+        <div id="quick-links">
+            <a href="https://github.com/harshitrathor3" target="_blank"><img src="static\icons\github.png" alt="Github Profile"></a>
+            <a href="https://linkedin.com/in/harshitrathore3/" target="_blank"><img src="static\icons\linkedin.png" alt="LinkedIn Profile" width="30" height="30"></a>
+        </div>
+        <div class="intro">
+            <div class="my-img-box">
+                <img src="static\images\Harshit Photo.jpg" alt="Harshit Photo" class="my-photo">
+            </div>
+            <div id="my-text-box">
+                <div class="b1">I'm</div>
+                <div class="b2">Harshit Rathore</div>
+                <div>
+                    <div id="text" class="b3"></div>
+                    <div id="cursor" class=""></div>
+                    <script src="static\js\typing effect.js"></script>
+                </div>
+                <!-- <div class="btn1"> -->
+                    <div class="btn1-resume">
+                        <button class="resume-btn">
+                            Download Resume
+                        </button>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section id="projects">
+        <div class="projects-set">
+            <h1>PROJECTS</h1>   
+
+            <div class="projects-box">
+                <div class="ml-box proj-box">
+                    <img src="static\icons\ml-img.png" alt="">
+                    <h2>ML Projects</h2>
+                </div>
+                
+                <div class="web-box proj-box">
+                    <img src="static\icons\web-img.png" alt="">
+                    <h2>Web Projects</h2>
+                </div>
+                <div class="app-box proj-box">
+                    <img src="static\icons\app-img.png" alt="">
+                    <h2>App Projects</h2>
+                </div>
+            </div>
+
+            <div class="ml" id="ml">
+                <div>
+                    
+                </div>
+            </div>
+            <div class="web" id="web">
+                
+            </div>
+            <div class="app" id="app">
+
+            </div>
+        </div>
+
+
+        <div class="all-projects">
+            <div class="ml-projects proj-domain">
+                <h2>Machine Learning Projects</h2>
+                <div class="ml-basic ml-sub">
+                    <div class="proj-heading">
+                        <h3>Basic Projects</h3>
+                    </div>
+                    <div class="proj1 proj">
+                        <img src="static\icons\ml-img.png" alt="">
+                        Digits Classification
+                        
+                        <!-- <a href="{{ url_for('digitClassifier') }}"> -->
+                        <button type="button" class="ml-proj-btn" onclick="window.location.href = '{{ url_for('digitClassifier') }}';">
+                            Try it
+                        </button>
+                        <!-- </a> -->
+                    </div>
+                    <div class="proj1 proj">
+                        <img src="static\icons\ml-img.png" alt="">
+                        Titanic Survival Prediction
+                        <button class="ml-proj-btn" onclick="window.location.href = '{{ url_for('titanicPrediction') }}';">
+                            Try it
+                        </button>
+                    </div>
+                    <div class="proj1 proj">
+                        <img src="static\icons\ml-img.png" alt="">
+                        California Housing Value Prediction
+                        <button class="ml-proj-btn">
+                            Try it
+                        </button>
+                    </div>
+                    <div class="proj1 proj">
+                        <img src="static\icons\ml-img.png" alt="">
+                        Horse Human Classifier
+                        <button class="ml-proj-btn">
+                            Try it
+                        </button>
+                    </div>
+                    <div class="proj1 proj">
+                        <img src="static\icons\ml-img.png" alt="">
+                        Happy Sad Emoji Classifier
+                        <button class="ml-proj-btn">
+                            Try it
+                        </button>
+                    </div>
+                </div>
+                <div class="ml-med ml-sub">
+                    <div class="proj-heading">
+                        <h3>Intermediate Projects</h3>
+                    </div>
+                    <div class="proj1 proj">
+                        <img src="static\icons\ml-img.png" alt="">
+                        Email Spam Classifier
+                        <button class="ml-proj-btn" onclick="window.location.href = '{{ url_for('emailClassifier') }}';">
+                            Try it
+                        </button>
+                    </div>
+                    <div class="proj1 proj">
+                        <img src="static\icons\ml-img.png" alt="">
+                        Text to speech using voice cloning
+                        <button class="ml-proj-btn">
+                            Try it
+                        </button>
+                    </div>
+                    <div class="proj1 proj">
+                        <img src="static\icons\ml-img.png" alt="">
+                        Invisiblity Cloak using Python
+                        <button class="ml-proj-btn">
+                            Try it
+                        </button>
+                    </div>
+                </div>
+                <div class="ml-adv ml-sub">
+                    <div class="proj-heading"> 
+                        <h3>Advanced Projects</h3>
+                    </div>
+                    <div class="proj1 proj">
+                        <img src="static\icons\ml-img.png" alt="">
+                        Speech Sentimental Analysis
+                        <button class="ml-proj-btn" onclick="window.location.href = '{{ url_for('speechSentiment') }}';">
+                            Try it
+                        </button>
+                    </div>
+                    <div class="proj1 proj">
+                        <img src="static\icons\ml-img.png" alt="">
+                        Spoofing Detection System
+                        <button class="ml-proj-btn" onclick="window.location.href = '{{ url_for('spoofDetection') }}';">
+                            Try it
+                        </button>
+                    </div>
+                    <div class="proj1 proj">
+                        <img src="static\icons\ml-img.png" alt="">
+                        GitHub Repository Analyzer
+                        <button class="ml-proj-btn">
+                            Try it
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="web-projects proj-domain">
+                <div>
+                    <h2>Web Development Projects</h2>
+                </div>
+                <div class="web-sub">
+                    <div class="proj">
+                        <img src="static\icons\web-img.png" alt="">
+                        Landing Page
+                    </div>
+                    <div class="proj">
+                        <img src="static\icons\web-img.png" alt="">
+                        Apna College challenge 1
+                    </div>
+                    <div class="proj">
+                        <img src="static\icons\web-img.png" alt="">
+                        Apna College challenge 2
+                    </div>
+                    <div class="proj">
+                        <img src="static\icons\web-img.png" alt="">
+                        Apna College challenge 3
+                    </div>
+                </div>
+            </div>
+            <div class="app-projects proj-domain">
+                <div>
+                    <h2>App Development Projects</h2>
+                </div>
+                <div class="app-sub">
+                    <div class="proj">
+                        <img src="static\icons\app-img.png" alt="">
+                        App1
+                    </div>
+                    <div class="proj">
+                        <img src="static\icons\app-img.png" alt="">
+                        App 2
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

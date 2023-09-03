@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Classifier</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+        img, div{
+            margin: 30px;
+        }
+        button{
+            margin: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Digit Classifier</h1>
+    <div class="input">
+        <div class="buttons">
+            <button>
+                Try with sample image
+            </button>
+            <button>
+                Upload your own image
+            </button>
+        </div>
+        <div class="images">
+            <img src="ml-img.png" height="100cm" width="100cm" alt="">
+            <img src="ml-img.png" height="100cm" width="100cm" alt="">
+        </div>
+    </div>
+    <div class="result">
+        <label for="res">Output is </label>
+        <input type="text" name="res" id="digit-output" value="0">
+    </div>
+</body>
+</html>
