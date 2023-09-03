@@ -20,7 +20,7 @@ def digitClassifier():
 
 @app.route('/titanicPrediction')
 def titanicPrediction():
-    return render_template('Projects/ML_Projects/Titanic Prediction.html')
+    return render_template('Projects/ML_Projects/TitanicPrediction.html')
 
 
 @app.route('/emailClassifier')
