@@ -4,5 +4,5 @@ PS I:\Projects\Hosted Portfolio> venv\Scripts\activate
 (venv) PS I:\Projects\Hosted Portfolio> pip3 freeze > requirements.txt
 (venv) PS I:\Projects\Hosted Portfolio> venv\Scripts\deactivate       
 (venv) PS I:\Projects\Hosted Portfolio> venv\Scripts\deactivate.bat
-(venv) PS I:\Projects\Hosted Portfolio> 
+(venv) PS I:\Projects\Hosted Portfolio>
 
