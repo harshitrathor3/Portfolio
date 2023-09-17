@@ -20,7 +20,7 @@ def digitClassifier():
 
 @app.route('/titanicPrediction')
 def titanicPrediction():
-    return render_template('Projects/ML_Projects/TitanicPrediction.html')
+    return render_template('Projects/ML_Projects/Titanic Prediction.html')
 
 
 @app.route('/emailClassifier')
@@ -36,7 +36,7 @@ def speechSentiment():
 def spoofDetection():
     return render_template('Projects/ML_Projects/Spoof Detection.html')
 
-@app.route('/mylink/')
+# @app.route('/mylink/')
 
 @app.route('/titanic', methods=["GET", 'POST'])
 def fun():
@@ -53,7 +53,6 @@ def fun():
         cabin = str(request.form['cabin'])
         emb = str(request.form['emb'])
         
-        print(pid, pclass, name, sex, age, sib, par, tict, fare, cabin, emb)
         # print('output ' ,sex)
         
         output = titanic.predict(pid, pclass, name, sex, age, sib, par, tict, fare, cabin, emb)
